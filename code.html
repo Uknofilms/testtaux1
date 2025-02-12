@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Taux d'Intérêt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Calculateur de Taux d'Intérêt</h1>
+        <p>Estimez facilement vos gains ou le taux de vos placements et crédits.</p>
+    </header>
+
+    <main>
+        <section class="calculator">
+            <h2>Calculateur 1: Taux d'Intérêt Généré</h2>
+            <div class="input-group">
+                <label for="capitalInitial1">Capital Initial:</label>
+                <input type="number" id="capitalInitial1" placeholder="Montant initial">
+            </div>
+            <div class="input-group">
+                <label for="interetsGénérés">Intérêts Générés:</label>
+                <input type="number" id="interetsGénérés" placeholder="Montant des intérêts">
+            </div>
+            <button onclick="calculerTaux()">Calculer le Taux</button>
+            <div class="result" id="resultatTaux"></div>
+        </section>
+
+        <section class="calculator">
+            <h2>Calculateur 2: Gains Futurs</h2>
+            <div class="input-group">
+                <label for="capitalInitial2">Capital Initial:</label>
+                <input type="number" id="capitalInitial2" placeholder="Montant initial">
+            </div>
+            <div class="input-group">
+                <label for="tauxInteret">Taux d'Intérêt (%):</label>
+                <input type="number" id="tauxInteret" placeholder="Taux annuel">
+            </div>
+            <div class="input-group">
+                <label for="nombreAnnees">Nombre d'Années:</label>
+                <input type="number" id="nombreAnnees" placeholder="Durée du placement">
+            </div>
+            <button onclick="calculerGainsFuturs()">Calculer les Gains</button>
+            <div class="result" id="resultatGains"></div>
+        </section>
+
+        <section class="calculator">
+            <h2>Calculateur 3: Intérêts d'un Crédit</h2>
+            <div class="input-group">
+                <label for="montantEmprunte">Montant Emprunté:</label>
+                <input type="number" id="montantEmprunte" placeholder="Montant du prêt">
+            </div>
+            <div class="input-group">
+                <label for="tauxCredit">Taux du Crédit (%):</label>
+                <input type="number" id="tauxCredit" placeholder="Taux annuel">
+            </div>
+            <div class="input-group">
+                <label for="dureeCredit">Durée du Crédit (Années):</label>
+                <input type="number" id="dureeCredit" placeholder="Nombre d'années">
+            </div>
+            <button onclick="calculerInteretsCredit()">Calculer le Crédit</button>
+            <div class="result" id="resultatCredit"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Calculateur de Taux d'Intérêt</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
